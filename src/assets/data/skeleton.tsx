@@ -1,6 +1,7 @@
 import { HeaderPropsType } from '../../components/Header'
 import { buttonProps } from '../../components/Button'
 import { ModrenTechPropsType } from '../../components/ModrenTechSection'
+import { GeneralThandsBlockPropsType } from '../../components/GeneralTrands'
 import ReactGroupImage from '../images/React-group.png'
 
 
@@ -33,4 +34,15 @@ export const sendButton: buttonProps = {
 
 export const learnMoreButton: buttonProps = {
 	text: 'Подробнее'
+}
+
+export const generalTrands: GeneralThandsBlockPropsType = {
+	list: {
+		trand_1: 'Artificial intelligence',
+		trand_2: 'CDN networks',
+		trand_3: 'Efficiency',
+		trand_4: 'Edge features',
+		trand_5: 'Automation',
+		trand_6: 'Cloud Computing'
+	}
 }
