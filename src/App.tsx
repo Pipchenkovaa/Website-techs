@@ -1,23 +1,24 @@
-// import React from 'react'
 // import { useState } from 'react'
-import Header from './components/Header'
-import ModrenTechBlock from './components/ModrenTechSection'
-import FrontendTechCardsSection from './components/FrontendCardsSection'
-import BackendTechCardsSection from './components/BackendCardsSection'
-import { navBarLinks, modrenTechSection, generalTrands } from './assets/data/skeleton'
-import GeneralThandsBlock from './components/GeneralTrands'
-import './styles/main.css'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import HomePage from "./components/mainPage/homePage";
+import AboutTechsPage from "./components/secondPage/AboutTechsPage";
+import "./styles/main.css";
 
 function App() {
   return (
-		<div className="container">
-			<Header list={navBarLinks.list} />
-			<ModrenTechBlock title={modrenTechSection.title} description={modrenTechSection.description} image={modrenTechSection.image}/>
-			<FrontendTechCardsSection />
-			<BackendTechCardsSection />
-			<GeneralThandsBlock list={generalTrands.list}/>
-		</div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about-technologies" element={<AboutTechsPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

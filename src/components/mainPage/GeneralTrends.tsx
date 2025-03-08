@@ -1,4 +1,4 @@
-export interface GeneralThandsBlockPropsType {
+export interface GeneralTrendsBlockPropsType {
 	list: {
 		trand_1: string
 		trand_2: string
@@ -9,10 +9,10 @@ export interface GeneralThandsBlockPropsType {
 	}
 }
 
-const GeneralThandsBlock: React.FunctionComponent<GeneralThandsBlockPropsType> = ({ list }) => {
+const GeneralTrendsBlock: React.FunctionComponent<GeneralTrendsBlockPropsType> = ({ list }) => {
 	return (
 		<section className="block m-auto my-[180px] mx-[60px] transition-all duration-500 mobile-lg:block mobile-lg:my-[60px] tablet-sm:my-[120px] tablet-lg:mx-[32px] tablet-lg:my-[140px] desktop-sm:mx-[40px]">
-			<h1 className="text-center text-[40px] font-[600] text-[--main-light] uppercase mobile-lg:text-[18px] tablet-sm:text-[20px] tablet-lg:text-[28px] desktop-lg:text-[34px]">
+			<h1 id="trends" className="text-center text-[40px] font-[600] text-[--main-light] uppercase mobile-lg:text-[18px] tablet-sm:text-[20px] tablet-lg:text-[28px] desktop-lg:text-[34px]">
 				Общие тренды 2025
 			</h1>
 			<div className="rounded-[32px] w-auto p-[20px] my-[80px] tablet-sm:my-[40px] tablet-lg:my-[60px]" style={{ background: 'var(--gradient)' }}>
@@ -28,4 +28,4 @@ const GeneralThandsBlock: React.FunctionComponent<GeneralThandsBlockPropsType> =
 	)
 }
 
-export default GeneralThandsBlock
+export default GeneralTrendsBlock

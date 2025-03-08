@@ -70,6 +70,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .container {
 	display: block;
 	margin: 0 auto;
