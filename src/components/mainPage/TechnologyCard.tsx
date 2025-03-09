@@ -1,5 +1,5 @@
 import { learnMoreButton } from "../../assets/data/skeleton";
-import { LearnMoreButton } from "./Button";
+import { LearnMoreButton } from "../Button";
 import { Link } from "react-router-dom";
 
 export interface TechCardPropsType {

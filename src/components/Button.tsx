@@ -1,10 +1,10 @@
 // import { useNavigate } from 'react-router'
 
-export interface buttonProps {
+export interface ButtonProps {
 	text: string
 }
 
-export const DetailedButton: React.FunctionComponent<buttonProps & { href: string }> = ({ text, href }) => {
+export const DetailedButton: React.FunctionComponent<ButtonProps & { href: string }> = ({ text, href }) => {
 	return (
 		<a href={href} target="_blank" rel="noopener noreferrer"
 			className="flex justify-center items-center w-[264px] h-[64px] rounded-[20px] bg-[--main-light] hover:shadow-[0_0_20px_rgba(255,255,255,0.8)] transition-all duration-500 mobile-lg:w-full tablet-sm:w-[124px] tablet-sm:h-[40px] tablet-sm:rounded-[12px] tablet-lg:w-[164px] tablet-lg:h-[48px] tablet-lg:rounded-[16px] desktop-sm:w-[200px] desktop-sm:h-[54px] desktop-sm:rounded-[18px] desktop-lg:w-[248px] desktop-lg:h-[60px]"
@@ -16,7 +16,7 @@ export const DetailedButton: React.FunctionComponent<buttonProps & { href: strin
 	);
 }
 
-export const RetrospectiveButton: React.FunctionComponent<buttonProps & { href: string }> = ({ text, href }) => {
+export const RetrospectiveButton: React.FunctionComponent<ButtonProps & { href: string }> = ({ text, href }) => {
 	return (
 		<a href={href} target="_blank" rel="noopener noreferrer"
 			className="flex justify-center items-center w-[264px] h-[64px] rounded-[20px] border-2 border-[--main-light] hover:bg-[--main-light] transition-all duration-500 mobile-lg:w-full tablet-sm:w-[124px] tablet-sm:h-[40px] tablet-sm:rounded-[12px] tablet-lg:w-[164px] tablet-lg:h-[48px] tablet-lg:border tablet-lg:rounded-[16px] desktop-sm:w-[200px] desktop-sm:h-[54px] desktop-sm:rounded-[18px] desktop-sm:border desktop-lg:w-[248px] desktop-lg:h-[60px]"
@@ -28,7 +28,7 @@ export const RetrospectiveButton: React.FunctionComponent<buttonProps & { href: 
 	);
 }
 
-export const LearnMoreButton: React.FunctionComponent<buttonProps> = ({ text }) => {
+export const LearnMoreButton: React.FunctionComponent<ButtonProps> = ({ text }) => {
 	// const navigate = useNavigate()
 	// const clickHandler = () => navigate('/somePath')
 

@@ -1,8 +1,15 @@
+// components
 import { HeaderPropsType } from "../../components/mainPage/Header";
-import { buttonProps } from "../../components/mainPage/Button";
+import { ButtonProps } from "../../components/Button";
 import { ModernTechPropsType } from "../../components/mainPage/ModernTechSection";
 import { GeneralTrendsBlockPropsType } from "../../components/mainPage/GeneralTrends";
+import { FooterPropsType } from "../../components/Footer";
+
+// images & icons
 import ReactGroupImage from "../images/React-group.png";
+import GitHubIcon from "../icons/Github-icon.svg";
+import TelegramIcon from "../icons/Telegram-icon.svg";
+import EmailIcon from "../icons/Email-icon.svg";
 
 export const navBarHomeLinks: HeaderPropsType = {
   list: [
@@ -27,29 +34,40 @@ export const modernTechSection: ModernTechPropsType = {
   image: ReactGroupImage,
 };
 
-export const detailedButton: buttonProps = {
+export const detailedButton: ButtonProps = {
   text: "Подробнее",
 };
 
-export const retrospectiveButton: buttonProps = {
+export const retrospectiveButton: ButtonProps = {
   text: "Ретроспектива",
 };
 
-export const sendButton: buttonProps = {
+export const sendButton: ButtonProps = {
   text: "Отправить",
 };
 
-export const learnMoreButton: buttonProps = {
+export const learnMoreButton: ButtonProps = {
   text: "Подробнее",
 };
 
 export const generalTrends: GeneralTrendsBlockPropsType = {
   list: {
-    trand_1: "Artificial intelligence",
-    trand_2: "CDN networks",
-    trand_3: "Efficiency",
-    trand_4: "Edge features",
-    trand_5: "Automation",
-    trand_6: "Cloud Computing",
+    trand_1: "• Artificial intelligence",
+    trand_2: "• CDN networks",
+    trand_3: "• Efficiency",
+    trand_4: "• Edge features",
+    trand_5: "• Automation",
+    trand_6: "• Cloud Computing",
+  },
+};
+
+export const footer: FooterPropsType = {
+  confidentiality: "Политика конфиденциальности",
+  personalData: "Обработка персональных данных",
+  rights: "© Пипченкова Алина, 2025. Все права защищены.",
+  networks: {
+    github: GitHubIcon,
+    telegram: TelegramIcon,
+    mail: EmailIcon,
   },
 };
